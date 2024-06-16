@@ -1,0 +1,36 @@
+.products {
+  margin: 20px auto;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+  }
+
+  &__add {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: rgb(72, 235, 194);
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

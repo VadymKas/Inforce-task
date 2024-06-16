@@ -1,0 +1,47 @@
+.sort {
+  position: relative;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 10px;
+
+  &__label {
+    span {
+      border-bottom: 1px dashed rgb(72, 235, 194);
+      cursor: pointer;
+    }
+  }
+
+  &__popup {
+    position: absolute;
+    width: 175px;
+    right: 0px;
+    top: 30px;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 0;
+    z-index: 10;
+
+    ul {
+      overflow: hidden;
+
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: rgba(72, 235, 194, 0.2);
+        }
+
+        &.active {
+          font-weight: bold;
+          color: rgb(72, 235, 194);
+        }
+      }
+    }
+  }
+}
